@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports [`SnapShot Footer test testing Footer 1`]=`
+<footer>
+<div>
+<hr />
+@Testing </div>
+</footer>`;
