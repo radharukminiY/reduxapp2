@@ -12,26 +12,25 @@ var settings = {
 
 const showGallery = ({gdata}) =>{
     if(gdata){
-        return(
-            <Slider {...settings}>
-                {gdata.map((item) => {
-                    return(
-                        <Link to='/' className="slider-item">
-                            <div className="image" style={{background:`url(/images/galleries/${item.images[0].img})`}}></div>
-                        </Link>
-                    )
-                })}
-            </Slider>
+    return(
+    <Slider {...settings}>
+    {gdata.map((item) => {
+    return(
+    <Link to='/' className="slider-item">
+    <div className="image" style={{background:`url(/images/galleries/${item.images[0].img})`}}></div>
+      </Link>
         )
+      })}
+    </Slider>
+    )
     }
 }
 
 const GalleryDisplay = (props) => {
     return(
         <div className="home-gallery">
-            <h2>Image Gallery</h2>
-                {showGallery(props)}
-        </div>
+        <h2>Image Gallery</h2>
+          </div>
     )
 }
 

@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 const LatestDisplay =(props) =>{
   const renderLatest =({ldata}) =>{
     if(ldata){
-      return ldata.map((data) =>{
+      return [ldata].map((data) =>{
         return(
           <Link to={`/details/${data.id}`} key={data.id} className="item">
 
@@ -19,7 +19,6 @@ const LatestDisplay =(props) =>{
       })
     }
   }
-
 
   return(
     <div className="home-latest">
